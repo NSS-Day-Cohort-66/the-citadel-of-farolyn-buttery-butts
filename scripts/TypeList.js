@@ -23,7 +23,6 @@ export const TypeList = () => {
     headerHtml += `<div id="archetypes_card">`;
     headerHtml += `<li> ${type.name}</li>`;
     headerHtml += `<li> ${type.description}</li>`;
-    headerHtml += `<li> ${type.name}</li>`;
     headerHtml += `</div>`;
   }
   headerHtml += `</div>`;
