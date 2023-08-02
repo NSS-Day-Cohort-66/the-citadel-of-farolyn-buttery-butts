@@ -249,3 +249,7 @@ const database = {
     },
   ],
 };
+
+export const getSchools = () => {
+  return database.schools.map(school => ({...school}))
+}
