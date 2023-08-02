@@ -5,10 +5,18 @@ document.addEventListener("click", (clickEvent) => {
     const detailsHtml = `
       <div>
         <h4>Description:</h4>
+        <p>${schoolClicked.dataset.description}</p>
         <h4>Disclaimer:</h4>
-        <h4>Currently accepting the following Magician Types:</h4>
-      </div>
-    `;
+        <p>${schoolClicked.dataset.disclaimer}</p>
+        <h4>Currently accepting the following Magician Types:
+        <ul>`;
+        for (const archetype of archetypes) {
+          if (archetype.schoolId === parseInt(schoolClicked.dataset.id)) {
+            detailsHtml += `<li>${archetype.name}`
+          }
+        }
+    detailsHtml += "</ul> </h4> </div>"
+    return detailsHtml
   }
 });
 
