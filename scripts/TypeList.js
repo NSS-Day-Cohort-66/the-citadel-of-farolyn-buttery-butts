@@ -20,10 +20,7 @@ export const TypeList = () => {
   headerHtml += `<h3>Magician Types:</h3>`;
   headerHtml += `<ul>`;
   for (const type of archetypes) {
-    headerHtml += `<div id="archetypes_card">`;
-    headerHtml += `<li> ${type.name}</li>`;
-    headerHtml += `<li> ${type.description}</li>`;
-    headerHtml += `</div>`;
+    headerHtml += `<div id="archetypes_card"><li> ${type.name}</li></div>`;
   }
   headerHtml += `</div>`;
   return headerHtml;
