@@ -54,6 +54,11 @@ body {
   columns: 2;
 }
 
+#archetypes_card {
+  border: 1px solid black;
+  margin: 5px;
+}
+
 li {
   margin: 5px;
 }
