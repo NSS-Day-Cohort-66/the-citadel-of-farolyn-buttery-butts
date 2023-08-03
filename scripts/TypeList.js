@@ -2,12 +2,18 @@ document.addEventListener("click", (clickEvent) => {
   const typeClicked = clickEvent.target;
 
   if (typeClicked.dataset.type === "type") {
+    const greeting = typeClicked.dataset.greeting;
+    let school = "";
+    let book = "";
+    // for (const type of types) {
+    // }
     const detailsHtml = `
     <div>
       <h4>Greeting:</h4>
       <h4>School:</h4>
       <h4>Study Book:</h4>
     </div>`;
+    // return detailsHtml;
   }
 });
 
