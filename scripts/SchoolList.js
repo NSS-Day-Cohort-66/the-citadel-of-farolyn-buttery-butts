@@ -8,14 +8,14 @@ document.addEventListener("click", (clickEvent) => {
         <p>${schoolClicked.dataset.description}</p>
         <h4>Disclaimer:</h4>
         <p>${schoolClicked.dataset.disclaimer}</p>
-        <h4>Currently accepting the following Magician Types:
+        <h4>Currently accepting the following Magician Types:</h4>
         <ul>`;
         for (const archetype of archetypes) {
           if (archetype.schoolId === parseInt(schoolClicked.dataset.id)) {
             detailsHtml += `<li>${archetype.name}`
           }
         }
-    detailsHtml += "</ul> </h4> </div>"
+    detailsHtml += "</ul> </div>"
     return detailsHtml
   }
 });
